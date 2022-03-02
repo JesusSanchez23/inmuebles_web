@@ -1,0 +1,93 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* globales */
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* header y navegacion */
+h1 {
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h1 span {
+    color: #037bc0;
+
+}
+
+.contenedor-nav {
+    border-top: 1px solid #000;
+}
+
+.nav-principal {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-principal a:hover{
+    color: #082982;
+    background-color: aliceblue;
+}
+
+.hero {
+    background-image: url(../img/desk.jpeg);
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+/* section de productos*/
+.categorias h2{
+    text-align: center;
+}
+
+
+.listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.listado-categorias a{
+    
+}
+
+.categoria a{
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    border-bottom-right-radius: 10px;
+}
+
+.categoria a:hover{
+    background-color: #037bc0;
+    color: #fff;
+}
